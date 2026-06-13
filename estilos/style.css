@@ -290,7 +290,7 @@ div.textoGuia p {
 /* PREPARO */
 
 .preparo{
-    padding:60px 80px;
+    padding:60px 20px;
     margin-bottom:40px;
 }
 
@@ -453,23 +453,23 @@ div.textoGuia p {
 
     /* HEADER */
 
-    header{
-        padding:15px;
-    }
+header{
+    padding:15px;
+}
 
-    header h1{
-        font-size:1.5rem;
-        gap:10px;
-    }
+header h1{
+    font-size:1.5rem;
+    gap:10px;
+}
 
-    .logo img{
-        width:50px;
-        height:50px;
-    }
+.logo img{
+    width:50px;
+    height:50px;
+}
 
-    .menu-btn{
-        font-size:28px;
-    }
+.menu-btn{
+    font-size:28px;
+}
 
     /* HERO */
 
@@ -515,9 +515,9 @@ div.video-box {
 }
 
 div.video-placeholder {
-    height: 200px;
+    height: 160px;
     max-width: 60%;
-    min-width: 400px;
+    min-width: 300px;
     margin: auto;
 }
 
