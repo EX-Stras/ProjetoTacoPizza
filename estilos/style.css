@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    transition: .5;
 }
 
 body{
@@ -87,7 +88,7 @@ header h1{
 .menu-btn{
     border:none;
     background:none;
-    font-size:26px;
+    font-size:30px;
     cursor:pointer;
     color:#c42f2f;
 
@@ -149,11 +150,31 @@ header h1{
     margin-bottom:30px;
 }
 
-.topicos li{
+.topicos a, .topicos li::marker{
     color:#cb0909;
     font-size:1.7rem;
-    margin-bottom:18px;
+    transition: .5s;
 }
+
+.topicos li {
+    margin-bottom: 18px;
+    transition: .5s;
+}
+
+.topicos a {
+    text-decoration: none;
+}
+
+.topicos a:hover, .topicos li:hover::marker{
+    color: #ff8400;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.topicos hr {
+    display: none;
+}
+
 .topicos ul{
     width:100%;
 }
@@ -266,6 +287,19 @@ div.textoGuia p {
     padding:0;
 }
 
+div.desc {
+    display: grid;
+    grid-template-columns: 1.5fr 0.4fr;
+    grid-template-rows: 0.6fr 0.4fr;
+    width: 100%;
+    height: 100%;
+}
+
+div.desc span {
+    grid-area: 1 / 1 / 2 / 2;
+    align-content: flex-end;
+}
+
 .item img,
 .item-utensilio img{
     width:180px;
@@ -277,7 +311,6 @@ div.textoGuia p {
 }
 .item span,
 .item-utensilio span{
-    padding-right:20px;
 
     font-size:1rem;
     font-weight:500;
@@ -285,6 +318,28 @@ div.textoGuia p {
     line-height:1.5;
 
     color:#333333;
+}
+
+button.buy {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 90px;
+    height: 30px;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 15px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    background-color: #cb0909;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+
+    transition: .2s;
+}
+
+button.buy:hover {
+    box-shadow: 0 0 5px rgb(0,0,0,0.5);
+    cursor: pointer;
 }
 
 /* PREPARO */
@@ -499,7 +554,7 @@ header h1{
     margin-bottom:10px !important;
 }
 
-.topicos li{
+.topicos a{
     font-size:3vw !important;
     margin-bottom:10px !important;
 }
@@ -587,7 +642,7 @@ div.video-placeholder {
         font-size: 4.5em;
     }
 
-    .topicos li {
+    .topicos a {
         font-size: 2.5em;
     }
 }

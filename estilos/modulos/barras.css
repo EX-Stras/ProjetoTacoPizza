@@ -1,0 +1,24 @@
+@media (min-width: 900px) {
+
+.topicos hr {
+    border: 1px solid #ff8400;
+    position: absolute;
+    display: none;
+
+    transform: translateY(-18px);
+    transition: .5;
+}
+
+.ativo {
+    display: block !important;
+    animation: barras .5s forwards;
+}
+
+@keyframes barras {
+    0% {
+        max-width: 0;
+    } 100% {
+        max-width: 100%;
+    }
+}
+}

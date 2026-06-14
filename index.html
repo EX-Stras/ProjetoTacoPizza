@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/modulos/barras.css">
 </head>
 
 <body>
@@ -61,12 +62,18 @@
             <h2>TÓPICOS</h2>
 
             <ul>
-                <li>Vídeo prático</li>
-                <li>Texto guia</li>
-                <li>Ingredientes</li>
-                <li>Utensílios</li>
-                <li>Preparo</li>
-                <li>Saiba mais</li>
+                <li><a href="#">Vídeo prático</a></li>
+                <hr class="barras ativo">
+                <li><a href="#">Texto guia</a></li>
+                <hr class="barra">
+                <li><a href="#">Ingredientes</a></li>
+                <hr class="barra">
+                <li><a href="#">Utensílios</a></li>
+                <hr class="barra">
+                <li><a href="#">Preparo</a></li>
+                <hr class="barra">
+                <li><a href="#">Saiba mais</a></li>
+                <hr class="barra">
             </ul>
 
         </div>
@@ -100,7 +107,9 @@
 
             <h2>TEXTO GUIA</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam a suscipit aut labore, accusantium delectus ullam earum velit itaque tempora beatae molestias! Sint quis sunt veritatis repudiandae est ipsam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam a suscipit aut labore, accusantium
+                delectus ullam earum velit itaque tempora beatae molestias! Sint quis sunt veritatis repudiandae est
+                ipsam!
             </p>
 
         </div>
@@ -157,22 +166,34 @@
 
             <div class="item-utensilio">
                 <img src="imagens/vasilhas.jpeg" alt="Tigelas">
-                <span>2 tigelas</span>
+                <div class="desc">
+                    <span>2 tigelas</span>
+                    <button class="buy">comprar</button>
+                </div>
             </div>
 
             <div class="item-utensilio">
                 <img src="imagens/colheres.jpeg" alt="Colheres">
-                <span>3 colheres</span>
+                <div class="desc">
+                    <span>3 colheres</span>
+                    <button class="buy">comprar</button>
+                </div>
             </div>
 
             <div class="item-utensilio">
                 <img src="imagens/copo.jpeg" alt="Copo">
-                <span>1 copo</span>
+                <div class="desc">
+                    <span>1 copo</span>
+                    <button class="buy">comprar</button>
+                </div>
             </div>
 
             <div class="item-utensilio">
                 <img src="imagens/panela.jpeg" alt="Panela">
-                <span>1 panela</span>
+                <div class="desc">
+                    <span>1 panela</span>
+                    <button class="buy">comprar</button>
+                </div>
             </div>
         </div>
 
@@ -267,6 +288,5 @@
 
     </footer>
 </body>
-
+    <script type="module" src="scripts/script.js"></script>
 </html>
-
