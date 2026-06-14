@@ -11,7 +11,6 @@ export default function initBarras(){
         barraAtual.setAttribute('width',`${this.offsetWidth + 20}px`)
         barraAtual.classList.add('ativo')
         this.addEventListener('mouseleave', HandleLeave)
-        
     }
 
     function HandleLeave(event){

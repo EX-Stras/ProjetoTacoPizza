@@ -4,12 +4,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    transition: .5;
 }
 
 body{
     font-family:'Poppins',sans-serif;
     background:#ffffff29;
+    display: grid;
 }
 
 /* HEADER */
