@@ -1,5 +1,5 @@
-nav.menu-lateral.ativar {
-    display: grid !important;
+nav.menu-lateral {
+    display: none;
     width: 210px;
     justify-self: flex-end;
     position: fixed;
@@ -36,9 +36,18 @@ nav.menu-lateral li a {
     transition: .5s;
 }
 
-.aparecer {
+div.header-buttons button {
+    transition: .5s;
+}
+
+button.descer {
     rotate: 90deg;
     margin-right: 2px;
+}
+
+nav.descer {
+    display: grid !important;
+    animation: descendo .5s forwards;
 }
 
 nav.menu-lateral li a:hover {
@@ -59,6 +68,16 @@ nav.menu-lateral li {
     nav.menu-lateral {
         transform: translate3d(0, 60%, 0);
         width: 150px;
+    }
+}
+
+@keyframes descendo {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    } 100% {
+        opacity: 1;
+        max-height: 100%;
     }
 }
 

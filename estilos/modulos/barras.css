@@ -11,7 +11,7 @@
 
 .ativo {
     display: block !important;
-    animation: barras .5s forwards;
+    animation: barras 1s forwards;
 }
 
 @keyframes barras {
