@@ -150,7 +150,7 @@ header h1{
     margin-bottom:30px;
 }
 
-.topicos a, .topicos li::marker{
+.topicos a{
     color:#cb0909;
     font-size:1.7rem;
     transition: .5s;
@@ -159,6 +159,11 @@ header h1{
 .topicos li {
     margin-bottom: 18px;
     transition: .5s;
+}
+
+.topicos li::marker {
+    color: #cb0909;
+    font-size: 1.7em;
 }
 
 .topicos a {
@@ -559,6 +564,10 @@ header h1{
     margin-bottom:10px !important;
 }
 
+.topicos li::marker {
+    font-size: 3vw !important;
+}
+
     /* VÍDEO */
 
 div.transcricao {
@@ -643,6 +652,10 @@ div.video-placeholder {
     }
 
     .topicos a {
+        font-size: 2.5em;
+    }
+
+    .topicos li::marker {
         font-size: 2.5em;
     }
 }
