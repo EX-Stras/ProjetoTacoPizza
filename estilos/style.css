@@ -467,21 +467,54 @@ button.buy:hover {
     line-height:1;
 }
 
-.footer-links{
-    display:flex;
-    gap:35px;
-    flex-wrap:wrap;
-}
-
-.footer-links a{
-    color:#ffffff;
+.footer-links a, .footer-links p{
+    color:#fff;
     text-decoration:none;
     font-size:1rem;
     transition:0.3s;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 0 20px 0 20px;
 }
 
 .footer-links a:hover{
     color:#ff8400;
+}
+
+.footer-links a:hover::after {
+    border-bottom: 8px solid #ff8400;
+}
+
+.footer-links a::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    transform: translate3d(10px, 7px, 0);
+
+    transition: .5s;
+}
+
+.footer-links article {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+
+    transition: .5s;
+}
+
+.footer-links article hr.vertical {
+    width: 1px;
 }
 
 .instagram-btn{
