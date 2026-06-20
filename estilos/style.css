@@ -228,7 +228,7 @@ div.textoGuia p {
     max-width: 800px;
     width: 60%;
     height:280px;
-    background: transparent;
+    background: #000;
 }
 
 video {
