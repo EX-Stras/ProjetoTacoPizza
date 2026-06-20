@@ -1,4 +1,4 @@
-import clickOutSide from "./outside.js"
+import clickOutSide from "../../scripts/animatons/outside.js"
 
 export default function initMenuHamburguer(){
     const menuIcon = document.querySelector('div.header-buttons button.menu-btn')
