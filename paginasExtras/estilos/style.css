@@ -125,6 +125,10 @@ header h1{
     display:none;
 }
 
+nav.menu-lateral {
+    transform: translate3d(0, 71%, 0) !important;
+}
+
 /* MAIN */
 
 main[data-principal]{
@@ -365,6 +369,11 @@ div[data-top="3"] {
 
 
         /* HEADER */
+
+    nav.menu-lateral {
+        transform: translate3d(0, 62%, 0) !important;
+    }
+        
     header{
         padding:15px;
     }
